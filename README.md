@@ -1,2 +1,2 @@
 # Portfolio
-Personal portfolio developed to experiement with the capabilities of react, typescript, and tailwind css.
+Personal portfolio developed to experiement with the capabilities of react, javascript, and tailwind css.
