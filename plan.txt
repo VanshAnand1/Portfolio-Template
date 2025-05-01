@@ -1,0 +1,2 @@
+maybe add a little blur radius around the text so that the stars dont interfere with the words
+link contact form to the google sheet
