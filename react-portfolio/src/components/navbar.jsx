@@ -1,6 +1,12 @@
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { X, Menu } from "lucide-react";
+import { HomeSection } from "@/components/homesection";
+import { AboutSection } from "@/components/aboutsection";
+import { SkillSection } from "@/components/skillsection";
+import { ProjectSection } from "@/components/projectsection";
+import { ContactSection } from "@/components/contactsection";
 
 const navItems = [
   { name: "Home", href: "#home" },

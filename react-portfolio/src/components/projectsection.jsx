@@ -6,7 +6,7 @@ const projects = [
     title: "Sorting Algorithm Visualizer",
     description:
       "A matplotlib application to visualize the sorting done by a number of algorithms",
-    image: "/projects/AlgorithmVisualizer.png",
+    image: "/Portfolio/projects/AlgorithmVisualizer.png",
     tags: ["Python", "matplotlib", "numpy", "VS Code"],
     demoUrl: "#",
     githubUrl: "https://github.com/VanshAnand1/Sorting-Algorithm-Visualizer",
@@ -16,7 +16,7 @@ const projects = [
     title: "BetterWeb Chrome Extension",
     description:
       "A chrome extension designed to make navigating the digital world accessible for all",
-    image: "/projects/BetterWebHorizontal.png",
+    image: "/Portfolio/projects/BetterWebHorizontal.png",
     tags: [
       "HTML",
       "CSS",
@@ -33,7 +33,7 @@ const projects = [
     id: 3,
     title: "TicTacToe",
     description: "A simple and intuitive TicTacToe Game",
-    image: "/projects/TicTacToe.png",
+    image: "/Portfolio/projects/TicTacToe.png",
     tags: ["HTML", "CSS", "Javascript", "Vercel", "VS Code"],
     demoUrl: "#",
     githubUrl: "https://github.com/VanshAnand1/Tic-Tac-Toe",
