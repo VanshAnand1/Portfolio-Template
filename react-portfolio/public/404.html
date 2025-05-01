@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>Redirecting…</title>
     <script>
-      const redirectPath = location.pathname.replace("/Portfolio", "");
-      location.replace("/Portfolio/?redirect=" + redirectPath);
+      const redirect = location.pathname.replace("/Portfolio", "");
+      location.replace("/Portfolio/?redirect=" + redirect);
     </script>
   </head>
   <body>
