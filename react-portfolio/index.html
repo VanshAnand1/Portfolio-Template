@@ -12,3 +12,8 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+<script>
+  // redirect all paths to index.html for client-side routing
+  const path = window.location.pathname.replace("/Portfolio", "");
+  window.location.replace("/Portfolio/" + "?redirect=" + path);
+</script>
