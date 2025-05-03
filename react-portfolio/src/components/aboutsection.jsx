@@ -19,7 +19,7 @@ export const AboutSection = () => {
               high school, I built small tools, games, and websites, each one
               teaching me something new and pushing me further.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground justify">
               As I pursue this passion through my formal education at the
               University of Toronto Scarborough, I only become more passionate.
               I am currently experimenting with different Python frameworks,

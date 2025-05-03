@@ -30,14 +30,14 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:vansh0711@gmail.com"
+                    href="mailto:vanshanandutsc@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    vansh0711@gmail.com
+                    vanshanandutsc@gmail.com
                   </a>
                 </div>
               </div>
-              <div className="flex justify-center items-start space-x-4">
+              {/* <div className="flex justify-center items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
@@ -50,7 +50,7 @@ export const ContactSection = () => {
                     647-804-0711
                   </a>
                 </div>
-              </div>
+              </div> */}
               <div className="flex justify-center items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />

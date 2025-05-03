@@ -1,12 +1,6 @@
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { X, Menu } from "lucide-react";
-import { HomeSection } from "@/components/homesection";
-import { AboutSection } from "@/components/aboutsection";
-import { SkillSection } from "@/components/skillsection";
-import { ProjectSection } from "@/components/projectsection";
-import { ContactSection } from "@/components/contactsection";
+import { X, Menu, Linkedin, Github, Instagram } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -44,6 +38,21 @@ export const NavBar = () => {
             <span className="text-glow text-foreground">Vansh's</span> Portfolio
           </span>
         </a>
+        <div className="flex space-x-4 justify-center">
+          <a
+            href="https://www.linkedin.com/in/vansh-anand-bb5852275/"
+            target="_blank"
+          >
+            <Linkedin className="hover:text-primary" />
+          </a>
+          <a href="https://github.com/VanshAnand1" target="_blank">
+            <Github className="hover:text-primary" />
+          </a>
+          <a href="https://www.instagram.com/vansh.a2006/" target="_blank">
+            <Instagram className="hover:text-primary" />
+          </a>
+        </div>
+
         {/* desktop version */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
