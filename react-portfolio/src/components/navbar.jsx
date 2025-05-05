@@ -39,10 +39,7 @@ export const NavBar = () => {
           </span>
         </a>
         <div className="flex space-x-4 justify-center">
-          <a
-            href="https://www.linkedin.com/in/vansh-anand-bb5852275/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/vanshanand1/" target="_blank">
             <Linkedin className="hover:text-primary" />
           </a>
           <a href="https://github.com/VanshAnand1" target="_blank">

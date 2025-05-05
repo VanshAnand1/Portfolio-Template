@@ -66,7 +66,7 @@ export const ContactSection = () => {
                 <h4 className="text-2xl font-semibold mb-3">Connect With Me</h4>
                 <div className="flex space-x-4 justify-center">
                   <a
-                    href="https://www.linkedin.com/in/vansh-anand-bb5852275/"
+                    href="https://www.linkedin.com/in/vanshanand1/"
                     target="_blank"
                   >
                     <Linkedin className="hover:text-primary" />
