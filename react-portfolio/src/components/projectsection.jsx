@@ -3,13 +3,20 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Sorting Algorithm Visualizer",
+    title: "Flappy Bird with Neural Nets",
     description:
-      "A matplotlib application to visualize the sorting done by a number of algorithms",
-    image: "/Portfolio/projects/AlgorithmVisualizer.png",
-    tags: ["Python", "matplotlib", "numpy", "VS Code"],
+      "A pygame and NEAT project that learns how to play flappy bird within a few generations",
+    image: "/Portfolio/projects/FlappyBird.png",
+    tags: [
+      "Python",
+      "Pygame",
+      "NEAT",
+      "Neural Nets",
+      "VS Code",
+      "Object Oriented Programming",
+    ],
     demoUrl: "#",
-    githubUrl: "https://github.com/VanshAnand1/Sorting-Algorithm-Visualizer",
+    githubUrl: "https://github.com/VanshAnand1/pygame-flappy-bird-with-neat",
   },
   {
     id: 2,
@@ -31,12 +38,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "TicTacToe",
-    description: "A simple and intuitive TicTacToe Game",
-    image: "/Portfolio/projects/TicTacToe.png",
-    tags: ["HTML", "CSS", "Javascript", "Vercel", "VS Code"],
+    title: "Circle Game",
+    description:
+      "A simple and intuitive Circle Game built with pygame and object oriented programming practices",
+    image: "/Portfolio/projects/CircleGame.png",
+    tags: ["Python", "Pygame", "VS Code", "Object Oriented Programming"],
     demoUrl: "#",
-    githubUrl: "https://github.com/VanshAnand1/Tic-Tac-Toe",
+    githubUrl: "https://github.com/VanshAnand1/Circle-Game",
   },
 ];
 
