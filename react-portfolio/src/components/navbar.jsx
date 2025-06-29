@@ -45,9 +45,9 @@ export const NavBar = () => {
           <a href="https://github.com/VanshAnand1" target="_blank">
             <Github className="hover:text-primary" />
           </a>
-          <a href="https://www.instagram.com/vansh.a2006/" target="_blank">
+          {/* <a href="https://www.instagram.com/vansh.a2006/" target="_blank">
             <Instagram className="hover:text-primary" />
-          </a>
+          </a> */}
         </div>
 
         {/* desktop version */}

@@ -33,7 +33,11 @@ export const HomeSection = () => {
             I'm a second year Computer Science student at the University of
             Toronto Scarborough Campus. <br></br>I enjoy learning new skills and
             innovating with different technologies. <br></br> I am currently
-            learning about Object Oriented Programming.
+            learning about{" "}
+            <span className="text-glow text-foreground">
+              Object Oriented Programming
+            </span>
+            .
           </p>
           <div>
             <a

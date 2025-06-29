@@ -74,19 +74,21 @@ export const ContactSection = () => {
                   <a href="https://github.com/VanshAnand1" target="_blank">
                     <Github className="hover:text-primary" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://www.instagram.com/vansh.a2006/"
                     target="_blank"
                   >
                     <Instagram className="hover:text-primary" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-xs w-full">
-            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              Send a Message <br></br>(Currently Down, Send Email Instead)
+            </h3>
             <form className="space-y-6" name="submit-to-google-sheet">
               <div>
                 <label
