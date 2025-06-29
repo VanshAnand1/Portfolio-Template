@@ -30,11 +30,11 @@ export const HomeSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I'm a second year Computer Science student at the University of
-            Toronto Scarborough Campus. <br></br>I enjoy learning new skills and
+            I'm a second year Computer Science (SE) student at the University of
+            Toronto Scarborough Campus.<br></br>I enjoy learning new skills and
             innovating with different technologies. <br></br> I am currently
             learning about{" "}
-            <span className="text-glow text-foreground">
+            <span className="text-primary opacity-0 animate-fade-in-delay-1">
               Object Oriented Programming
             </span>
             .
