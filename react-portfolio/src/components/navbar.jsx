@@ -29,7 +29,7 @@ export const NavBar = () => {
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-left justify-between">
         <a
           href="#home"
           className="text-xl font-bold text-primary flex items-center"
@@ -38,7 +38,7 @@ export const NavBar = () => {
             <span className="text-glow text-foreground">Vansh's</span> Portfolio
           </span>
         </a>
-        <div className="flex space-x-4 justify-center">
+        <div className="flex align-left space-x-4">
           <a href="https://www.linkedin.com/in/vanshanand1/" target="_blank">
             <Linkedin className="hover:text-primary" />
           </a>
