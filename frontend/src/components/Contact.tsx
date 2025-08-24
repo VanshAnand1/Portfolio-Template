@@ -2,6 +2,10 @@ import { useState } from "react";
 import { ConfettiButton } from "./lightswind/confetti-button";
 import { Mailbox } from "lucide-react";
 
+const LinkedIn = "https://www.linkedin.com/in/vanshanand1/";
+const GitHub = "https://github.com/VanshAnand1";
+const LeetCode = "https://leetcode.com/Vansh0711/";
+
 export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -51,6 +55,25 @@ export const Contact = () => {
       <h2 className="text-3xl font-bold text-[#ddccff] mb-8 text-center">
         Get in Touch!
       </h2>
+      <section className="text-[#ddccff]">
+        Reach me through my{" "}
+        <a href={LinkedIn} target="_blank">
+          LinkedIn
+        </a>
+      </section>
+      <section className="text-[#ddccff]">
+        Check out my{" "}
+        <a href={GitHub} target="_blank">
+          GitHub
+        </a>{" "}
+        and{" "}
+        <a href={LeetCode} target="_blank">
+          LeetCode
+        </a>
+      </section>
+      <section className="text-[#ddccff]">
+        Or fill out the form below to automatically send me a message!
+      </section>
 
       <form
         onSubmit={handleSubmit}
@@ -115,7 +138,7 @@ export const Contact = () => {
             type="submit"
             confettiOptions={{ particleCount: 100, spread: 70 }}
           >
-            Get in Touch!
+            Send Message
           </ConfettiButton>
         </div>
 
