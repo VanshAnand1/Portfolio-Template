@@ -19,9 +19,9 @@ export function Spotlight({
   className,
   size = 200,
   springOptions = { bounce: 0 },
+  color = "rgba(153, 51, 255, .25)",
 }: SpotlightProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
   const [parentElement, setParentElement] = useState<HTMLElement | null>(null);
 
   const mouseX = useSpring(0, springOptions);
@@ -58,15 +58,9 @@ export function Spotlight({
     if (!parentElement) return;
 
     parentElement.addEventListener("mousemove", handleMouseMove);
-    parentElement.addEventListener("mouseenter", () => setIsHovered(true));
-    parentElement.addEventListener("mouseleave", () => setIsHovered(false));
 
     return () => {
       parentElement.removeEventListener("mousemove", handleMouseMove);
-      parentElement.removeEventListener("mouseenter", () => setIsHovered(true));
-      parentElement.removeEventListener("mouseleave", () =>
-        setIsHovered(false)
-      );
     };
   }, [parentElement, handleMouseMove]);
 
@@ -74,9 +68,9 @@ export function Spotlight({
     <motion.div
       ref={containerRef}
       className={cn(
-        "pointer-events-none absolute rounded-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops),transparent_80%)] blur-xl transition-opacity duration-200",
-        "from-zinc-50 via-zinc-100 to-zinc-200",
-        isHovered ? "opacity-100" : "opacity-0",
+        "pointer-events-none absolute rounded-full blur-2xl transition-opacity duration-200",
+        "opacity-100",
+        "z-[9] mix-blend-screen",
         className
       )}
       style={{
@@ -84,6 +78,7 @@ export function Spotlight({
         height: size,
         left: spotlightLeft,
         top: spotlightTop,
+        background: `radial-gradient(circle at center, ${color} 0%, rgba(255,255,255,.25) 35%, transparent 70%)`,
       }}
     />
   );

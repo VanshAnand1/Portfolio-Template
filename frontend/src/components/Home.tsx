@@ -6,8 +6,11 @@ import { Spotlight } from "./elements/Interactive3DHero/spotlight";
 
 export function SplineSceneBasic() {
   return (
-    <Card className="center-h h-[500px] bg-black/[0.96] relative top-40 overflow-hidden">
-      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" />
+    <Card className="center-h h-[500px] bg-transparent relative top-40 overflow-hidden">
+      <Spotlight
+        size={280}
+        className="z-20 mix-blend-screen -top-40 left-0 md:left-60 md:-top-20"
+      />
       <div className="flex h-full">
         {/* Left content */}
         <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">

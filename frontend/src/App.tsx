@@ -1,6 +1,7 @@
 import { NavigationBar } from "./components/NavigationBar";
 import { LightRaysBackground } from "./components/LightRaysBackground";
 import { SplineSceneBasic } from "./components/Home";
+import { Projects } from "./components/Projects";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <LightRaysBackground />
       <NavigationBar />
       <SplineSceneBasic />
+      <Projects />
     </div>
   );
 }
