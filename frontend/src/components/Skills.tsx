@@ -36,7 +36,7 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="mt-48 md:mt-64 lg:mt-72 scroll-mt-40 md:scroll-mt-56 lg:scroll-mt-64 py-24 px-4"
+      className="mt-80 md:mt-96 lg:mt-[22rem] scroll-mt-48 md:scroll-mt-64 lg:scroll-mt-72 py-24 px-4"
     >
       <div className="mx-auto max-w-5xl">
         {/* Heading */}
