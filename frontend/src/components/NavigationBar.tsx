@@ -1,11 +1,12 @@
 import CardNav from "./elements/CardNav/CardNav";
-import logo from "../assets/react.svg";
+// import logo from "../assets/react.svg";
+import logo from "../assets/VanshAnandLogo.png";
 
 export const NavigationBar = () => {
   const items = [
     {
       label: "About Me",
-      bgColor: "#6f1fd1/1",
+      bgColor: "#rgba(111, 31, 209, 1)",
       textColor: "#ddccff",
       links: [
         { label: "Company", href: "#", ariaLabel: "About Company" },
@@ -54,6 +55,7 @@ export const NavigationBar = () => {
       buttonBgColor="#111"
       buttonTextColor="#ddccff"
       ease="power3.out"
+      className="rb-glass"
     />
   );
 };

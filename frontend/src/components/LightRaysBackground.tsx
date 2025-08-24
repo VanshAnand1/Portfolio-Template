@@ -6,7 +6,7 @@ export const LightRaysBackground = () => {
       raysOrigin="top-center"
       raysColor="#5200A3"
       raysSpeed={1.5}
-      lightSpread={0.5}
+      lightSpread={1}
       rayLength={3}
       followMouse
       mouseInfluence={0.3}
