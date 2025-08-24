@@ -30,9 +30,6 @@ export const Contact = () => {
         body,
       });
 
-      // Helpful while testing:
-      // const text = await res.text(); console.log("Apps Script response:", res.status, text);
-
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       setMsg("Message Sent!");
