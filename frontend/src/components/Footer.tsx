@@ -1,7 +1,9 @@
+import { FooterComponent } from "@/components/ui/footer-section";
+
 export const Footer = () => {
   return (
-    <div className="bg-black/40">
-      <h1 className="text-white">Footer</h1>
+    <div className="block">
+      <FooterComponent />
     </div>
   );
 };

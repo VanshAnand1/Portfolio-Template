@@ -45,7 +45,10 @@ const items: Carousel3DItem[] = [
 
 export const Projects = () => {
   return (
-    <section className="relative top-80 px-4 md:px-6 py-12 flex justify-center">
+    <section
+      id="projects"
+      className="relative top-80 px-4 md:px-6 py-12 flex justify-center"
+    >
       <Carousel3D
         items={items}
         autoRotate
