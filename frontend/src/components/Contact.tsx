@@ -75,6 +75,15 @@ export const Contact = () => {
         </a>
       </section>
       <section className="text-[#ddccff]">
+        Send me an email at{" "}
+        <a
+          href="mailto:vanshanandutsc@gmail.com"
+          className="underline hover:text-white transition"
+        >
+          vanshanandutsc@gmail.com
+        </a>
+      </section>
+      <section className="text-[#ddccff]">
         Or fill out the form below to automatically send me a message!
       </section>
 
