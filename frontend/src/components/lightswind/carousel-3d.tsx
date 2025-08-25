@@ -1,10 +1,4 @@
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 /* ------------------------- Types ------------------------- */
@@ -14,8 +8,8 @@ export type Carousel3DItem = {
   brand: string;
   description: string;
   tags: string[];
-  imageUrl: string; // url or /public path
-  link: string; // "https://..." or "/route" or "#"
+  imageUrl: string;
+  link: string;
 };
 
 export type Carousel3DProps = {
@@ -31,12 +25,21 @@ export type Carousel3DProps = {
 
 /* ----------------------- Helpers ------------------------ */
 function useIsMobile(): boolean {
-  return useMemo(
-    () =>
-      typeof window !== "undefined" &&
-      window.matchMedia("(pointer: coarse)").matches,
-    []
-  );
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mql = window.matchMedia("(max-width: 1024px)");
+
+    const update = () => setIsMobile(mql.matches);
+    update(); // run once on mount
+
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  return isMobile;
 }
 
 /* ---------------------- Component ----------------------- */

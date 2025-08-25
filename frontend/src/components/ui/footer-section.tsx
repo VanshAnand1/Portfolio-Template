@@ -103,7 +103,7 @@ export function FooterComponent() {
           {/* Tiny updates / tags */}
           <div className="rounded-2xl border border-white/10 bg-neutral-900/30 p-6">
             <h3 className="mb-4 text-lg font-semibold text-white">
-              What I’m into
+              My Interests
             </h3>
             <div className="flex flex-wrap gap-2">
               {[
