@@ -85,7 +85,7 @@ export const NavigationBar = () => {
         items={items}
         baseColor="transparent"
         menuColor="#ddccff"
-        buttonBgColor="#111"
+        buttonBgColor="transparent"
         buttonTextColor="#ddccff"
         ease="power3.out"
         className="rb-glass"
