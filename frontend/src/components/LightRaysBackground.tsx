@@ -10,7 +10,7 @@ type RaysOrigin =
   | "bottom-right";
 
 export const LightRaysBackground: React.FC = () => {
-  // Defaults from your current usage
+  const [enableRays, setEnableRays] = useState(true);
   const [raysOrigin, setRaysOrigin] = useState<RaysOrigin>("top-center");
   const [raysColor, setRaysColor] = useState("#5200A3");
   const [raysSpeed, setRaysSpeed] = useState(1.5);
@@ -31,7 +31,7 @@ export const LightRaysBackground: React.FC = () => {
         raysColor={raysColor}
         raysSpeed={raysSpeed}
         lightSpread={lightSpread}
-        rayLength={rayLength}
+        rayLength={enableRays ? rayLength : 0}
         followMouse={followMouse}
         mouseInfluence={mouseInfluence}
         noiseAmount={noiseAmount}
@@ -77,18 +77,35 @@ export const LightRaysBackground: React.FC = () => {
       {open && (
         <div
           id="lightrays-settings"
-          className="fixed top-14 right-4 z-50 w-80 rounded-2xl bg-neutral-900/95 border border-[#ddccff]/60 p-4 text-white shadow-2xl backdrop-blur"
+          className="fixed top-20 right-4 z-50 w-80 rounded-2xl bg-neutral-900/95 border border-[#ddccff]/60 p-4 text-white shadow-2xl backdrop-blur"
           role="dialog"
           aria-label="Light Rays Settings"
         >
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-lg font-semibold text-[#ddccff]">Light Rays</h3>
+            <h3 className="text-lg font-semibold text-[#ddccff]">
+              Light Rays Menu
+            </h3>
             <button
               type="button"
               onClick={() => setOpen(false)}
               className="rounded-lg px-2 py-1 text-sm border border-[#ddccff]/50 hover:border-[#ddccff] hover:bg-white/5 transition"
             >
               Close
+            </button>
+          </div>
+          {/* enableRays */}
+          <div className="mb-3 flex items-center justify-between">
+            <label className="text-sm text-[#ddccff]">Light Rays</label>
+            <button
+              type="button"
+              onClick={() => setEnableRays((v) => !v)}
+              className={`rounded-full text-xs px-3 py-1 border transition ${
+                enableRays
+                  ? "bg-[#ddccff] text-white border-[#ddccff]"
+                  : "border-[#ddccff]/60 text-white hover:bg-white/5"
+              }`}
+            >
+              {enableRays ? "On" : "Off"}
             </button>
           </div>
 
