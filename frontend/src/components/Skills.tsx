@@ -34,13 +34,13 @@ export const Skills = () => {
   );
 
   return (
-    <section
-      id="skills"
-      className="mt-80 md:mt-96 lg:mt-[22rem] scroll-mt-48 md:scroll-mt-64 lg:scroll-mt-72 py-24 px-4"
-    >
+    <section className="mt-80 md:mt-96 lg:mt-[22rem] scroll-mt-48 md:scroll-mt-64 lg:scroll-mt-72 py-24 px-4">
       <div className="mx-auto max-w-5xl">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center">
+        <h2
+          id="skills"
+          className="text-3xl md:text-4xl font-extrabold mb-10 text-center"
+        >
           <span className="bg-[#e5e7eb] bg-clip-text text-transparent">
             {title}
           </span>

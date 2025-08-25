@@ -54,7 +54,10 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div
+      id="contact"
+      className="flex flex-col justify-center items-center min-h-screen"
+    >
       <h2 className="text-3xl font-bold text-[#ddccff] mb-8 text-center">
         Get in Touch!
       </h2>
@@ -90,7 +93,7 @@ export const Contact = () => {
       <form
         onSubmit={handleSubmit}
         name="submit-to-google-sheet"
-        className="w-full max-w-md space-y-6 p-8 rounded-2xl shadow-lg"
+        className="w-full max-w-md space-y-6 p-8 rounded-2xl shadow-none border-0 outline-none"
       >
         <div className="flex flex-col space-y-2">
           <label htmlFor="name" className="text-white font-medium">
