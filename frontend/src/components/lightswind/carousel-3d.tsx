@@ -106,7 +106,7 @@ export default function Carousel3D(props: Carousel3DProps) {
       return "translate-x-[-40%] scale-95 opacity-60 z-10";
     return "scale-90 opacity-0";
   };
-
+  console.log("Carousel isMobile =", isMobile);
   return (
     <section
       id="carousel3d"
@@ -219,7 +219,16 @@ export default function Carousel3D(props: Carousel3DProps) {
           {!isMobile && items.length > 1 && (
             <>
               <button
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-gray-600 hover:bg-white z-30 shadow-md transition-all hover:scale-110"
+                className="
+                  absolute left-4 top-1/2 -translate-y-1/2 size-9
+                  z-50 grid place-items-center shadow-md transition
+
+                  !rounded-full !p-0
+                  !border !border-[#ddccff]
+                  !text-[#ddccff] !bg-black/30
+                  hover:!bg-[#ddccff] hover:!text-black
+                  focus:!outline-none
+                "
                 onClick={() =>
                   setActive((p) => (p - 1 + items.length) % items.length)
                 }
@@ -229,7 +238,16 @@ export default function Carousel3D(props: Carousel3DProps) {
               </button>
 
               <button
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center text-gray-600 hover:bg-white z-30 shadow-md transition-all hover:scale-110"
+                className="
+                  absolute right-4 top-1/2 -translate-y-1/2 size-9
+                  z-50 grid place-items-center shadow-md transition
+
+                  !rounded-full !p-0
+                  !border !border-[#ddccff]
+                  !text-[#ddccff] !bg-black/30
+                  hover:!bg-[#ddccff] hover:!text-black
+                  focus:!outline-none
+                "
                 onClick={() => setActive((p) => (p + 1) % items.length)}
                 aria-label="Next"
               >
@@ -239,14 +257,14 @@ export default function Carousel3D(props: Carousel3DProps) {
           )}
 
           {/* Dots */}
-          <div className="absolute bottom-6 left-0 right-0 flex justify-center items-center space-x-3 z-30">
+          <div className="absolute bottom-6 left-0 right-0 flex justify-center items-center space-x-3 z-50">
             {items.map((_, idx) => (
               <button
                 key={idx}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   active === idx
-                    ? "bg-gray-500 w-5"
-                    : "bg-gray-400/60 hover:bg-gray-400 w-2"
+                    ? "!bg-[#ddccff] w-6"
+                    : "!bg-[#ddccff]/40 hover:!bg-[#ddccff]/70 w-2"
                 }`}
                 onClick={() => setActive(idx)}
                 aria-label={`Go to item ${idx + 1}`}
