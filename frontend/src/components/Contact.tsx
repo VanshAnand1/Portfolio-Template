@@ -11,6 +11,9 @@ export const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [msg, setMsg] = useState<string>("");
+  const [particleCount, setParticleCount] = useState(100);
+  const [spread, setSpread] = useState(70);
+  const [popupOpen, setPopupOpen] = useState(false);
 
   const scriptURL = import.meta.env.VITE_SCRIPT_URL as string | undefined;
 
@@ -136,7 +139,10 @@ export const Contact = () => {
             size="lg"
             animation="glow"
             type="submit"
-            confettiOptions={{ particleCount: 100, spread: 70 }}
+            confettiOptions={{
+              particleCount: particleCount,
+              spread: spread,
+            }}
           >
             Send Message
           </ConfettiButton>
@@ -148,6 +154,82 @@ export const Contact = () => {
           </p>
         )}
       </form>
+      <p className="text-white text-sm">
+        <button
+          type="button"
+          onClick={() => setPopupOpen(true)}
+          className="text-sm underline decoration-[#ddccff] underline-offset-2 hover:text-[#ddccff] transition px-1"
+        >
+          psst...
+        </button>
+      </p>
+      {popupOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          {/* Overlay */}
+          <div
+            className="absolute inset-0 bg-black/70"
+            onClick={() => setPopupOpen(false)}
+          />
+
+          {/* Panel */}
+          <div className="relative z-10 w-full max-w-md rounded-2xl bg-neutral-900 p-6 shadow-xl text-white">
+            <h3 className="text-2xl font-bold text-[#ddccff] mb-6 text-center">
+              Edit the Confetti Settings!
+            </h3>
+
+            {/* Particle Count */}
+            <div className="mb-6">
+              <label
+                htmlFor="particle"
+                className="block mb-2 font-medium text-[#ddccff]"
+              >
+                Particle Count (50–500): <span>{particleCount}</span>
+              </label>
+              <input
+                id="particle"
+                type="range"
+                min={50}
+                max={500}
+                step={1}
+                value={particleCount}
+                onChange={(e) => setParticleCount(Number(e.target.value))}
+                className="w-full accent-[#ddccff]"
+              />
+            </div>
+
+            {/* Spread */}
+            <div className="mb-8">
+              <label
+                htmlFor="spread"
+                className="block mb-2 font-medium text-[#ddccff]"
+              >
+                Spread (20–180): <span>{spread}</span>
+              </label>
+              <input
+                id="spread"
+                type="range"
+                min={20}
+                max={180}
+                step={1}
+                value={spread}
+                onChange={(e) => setSpread(Number(e.target.value))}
+                className="w-full accent-[#ddccff]"
+              />
+            </div>
+
+            {/* Actions */}
+            <div className="flex justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => setPopupOpen(false)}
+                className="px-4 py-2 rounded-lg border border-[#ddccff]/60 text-white hover:bg-white/5 transition"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
