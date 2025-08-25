@@ -15,6 +15,24 @@ type SpotlightProps = {
   color?: string;
 };
 
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mql = window.matchMedia("(max-width: 1024px)");
+
+    const update = () => setIsMobile(mql.matches);
+    update(); // run once on mount
+
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  return isMobile;
+}
+
 export function Spotlight({
   className,
   size = 200,
@@ -26,6 +44,7 @@ export function Spotlight({
 
   const mouseX = useSpring(0, springOptions);
   const mouseY = useSpring(0, springOptions);
+  const isMobile = useIsMobile();
 
   const spotlightLeft = useTransform(
     mouseX,
@@ -65,21 +84,23 @@ export function Spotlight({
   }, [parentElement, handleMouseMove]);
 
   return (
-    <motion.div
-      ref={containerRef}
-      className={cn(
-        "pointer-events-none absolute rounded-full blur-2xl transition-opacity duration-200",
-        "opacity-100",
-        "z-[9] mix-blend-screen",
-        className
-      )}
-      style={{
-        width: size,
-        height: size,
-        left: spotlightLeft,
-        top: spotlightTop,
-        background: `radial-gradient(circle at center, ${color} 0%, rgba(255,255,255,.25) 35%, transparent 70%)`,
-      }}
-    />
+    !isMobile && (
+      <motion.div
+        ref={containerRef}
+        className={cn(
+          "pointer-events-none absolute rounded-full blur-2xl transition-opacity duration-200",
+          "opacity-100",
+          "z-[9] mix-blend-screen",
+          className
+        )}
+        style={{
+          width: size,
+          height: size,
+          left: spotlightLeft,
+          top: spotlightTop,
+          background: `radial-gradient(circle at center, ${color} 0%, rgba(255,255,255,.25) 35%, transparent 70%)`,
+        }}
+      />
+    )
   );
 }

@@ -58,37 +58,39 @@ export const Contact = () => {
       id="contact"
       className="flex flex-col justify-center items-center min-h-screen"
     >
-      <h2 className="text-3xl font-bold text-[#ddccff] mb-8 text-center">
-        Get in Touch!
-      </h2>
-      <section className="text-[#ddccff]">
-        Reach me through my{" "}
-        <a href={LinkedIn} target="_blank">
-          LinkedIn
-        </a>
-      </section>
-      <section className="text-[#ddccff]">
-        Check out my{" "}
-        <a href={GitHub} target="_blank">
-          GitHub
-        </a>{" "}
-        and{" "}
-        <a href={LeetCode} target="_blank">
-          LeetCode
-        </a>
-      </section>
-      <section className="text-[#ddccff]">
-        Send me an email at{" "}
-        <a
-          href="mailto:vanshanandutsc@gmail.com"
-          className="underline hover:text-white transition"
-        >
-          vanshanandutsc@gmail.com
-        </a>
-      </section>
-      <section className="text-[#ddccff]">
-        Or fill out the form below to automatically send me a message!
-      </section>
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-[#ddccff] mb-8 text-center">
+          Get in Touch!
+        </h2>
+        <section className="text-[#ddccff]">
+          Reach me through my{" "}
+          <a href={LinkedIn} target="_blank">
+            LinkedIn
+          </a>
+        </section>
+        <section className="text-[#ddccff]">
+          Check out my{" "}
+          <a href={GitHub} target="_blank">
+            GitHub
+          </a>{" "}
+          and{" "}
+          <a href={LeetCode} target="_blank">
+            LeetCode
+          </a>
+        </section>
+        <section className="text-[#ddccff]">
+          Send me an email at{" "}
+          <a
+            href="mailto:vanshanandutsc@gmail.com"
+            className="underline hover:text-white transition"
+          >
+            vanshanandutsc@gmail.com
+          </a>
+        </section>
+        <section className="text-[#ddccff]">
+          Or fill out the form below to automatically send me a message!
+        </section>
+      </div>
 
       <form
         onSubmit={handleSubmit}

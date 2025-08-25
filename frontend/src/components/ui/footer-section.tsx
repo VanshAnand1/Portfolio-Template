@@ -11,11 +11,11 @@ export function FooterComponent() {
       </div>
 
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 py-2 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand / bio */}
           <div className="rounded-2xl border border-white/10 bg-neutral-900/50 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,.05)] backdrop-blur">
             <div className="mb-3 text-2xl font-bold tracking-tight">
-              <span className="text-white">Vansh</span>
+              <span className="text-white">Vansh </span>
               <span className="text-[#ddccff]">Anand</span>
             </div>
             <p className="text-sm text-neutral-300">

@@ -10,6 +10,18 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body,
+#root,
+#__next {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
