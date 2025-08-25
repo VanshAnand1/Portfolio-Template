@@ -3,25 +3,25 @@ import { useState } from "react";
 const title = "Title";
 
 const skills = [
-  { name: "Skill", level: 80, category: "Category 1" },
-  { name: "Skill", level: 60, category: "Category 2" },
-  { name: "Skill", level: 85, category: "Category 1" },
-  { name: "Skill", level: 15, category: "Category 2" },
-  { name: "Skill", level: 80, category: "Category 1" },
-  { name: "Skill", level: 70, category: "Category 3" },
-  { name: "Skill", level: 70, category: "Category 1" },
-  { name: "Skill", level: 80, category: "Category 3" },
-  { name: "Skill", level: 20, category: "Category 1" },
-  { name: "Skill", level: 60, category: "Category 3" },
-  { name: "Skill", level: 5, category: "Category 1" },
-  { name: "Skill", level: 60, category: "Category 2" },
+  { name: "Skill 1", level: 80, category: "Category 1" },
+  { name: "Skill 2", level: 60, category: "Category 2" },
+  { name: "Skill 3", level: 85, category: "Category 1" },
+  { name: "Skill 4", level: 15, category: "Category 2" },
+  { name: "Skill 5", level: 80, category: "Category 1" },
+  { name: "Skill 6", level: 70, category: "Category 3" },
+  { name: "Skill 7", level: 70, category: "Category 1" },
+  { name: "Skill 8", level: 80, category: "Category 3" },
+  { name: "Skill 9", level: 20, category: "Category 1" },
+  { name: "Skill 10", level: 60, category: "Category 3" },
+  { name: "Skill 11", level: 5, category: "Category 1" },
+  { name: "Skill 12", level: 60, category: "Category 2" },
 
-  { name: "Skill", level: 75, category: "Category 2" },
-  { name: "Skill", level: 85, category: "Category 1" },
-  { name: "Skill", level: 55, category: "Category 2" },
-  { name: "Skill", level: 90, category: "Category 3" },
-  { name: "Skill", level: 85, category: "Category 1" },
-  { name: "Skill", level: 30, category: "Category 2" },
+  { name: "Skill 13", level: 75, category: "Category 2" },
+  { name: "Skill 14", level: 85, category: "Category 1" },
+  { name: "Skill 15", level: 55, category: "Category 2" },
+  { name: "Skill 16", level: 90, category: "Category 3" },
+  { name: "Skill 17", level: 85, category: "Category 1" },
+  { name: "Skill 18", level: 30, category: "Category 2" },
 ];
 
 const categories = ["all", "Category 1", "Category 2", "Category 3"];
@@ -36,7 +36,7 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="mt-48 md:mt-64 lg:mt-72 scroll-mt-40 md:scroll-mt-56 lg:scroll-mt-64 py-24 px-4"
+      className="mt-80 md:mt-96 lg:mt-[22rem] scroll-mt-48 md:scroll-mt-64 lg:scroll-mt-72 py-24 px-4"
     >
       <div className="mx-auto max-w-5xl">
         {/* Heading */}
