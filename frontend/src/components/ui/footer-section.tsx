@@ -16,7 +16,7 @@ export function FooterComponent() {
           <div className="rounded-2xl border border-white/10 bg-neutral-900/50 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,.05)] backdrop-blur">
             <div className="mb-3 text-2xl font-bold tracking-tight">
               <span className="text-white">Vansh</span>
-              <span className="text-[#ddccff]"> Anand</span>
+              <span className="text-[#ddccff]">Anand</span>
             </div>
             <p className="text-sm text-neutral-300">
               I craft thoughtful interfaces and playful interactions. Always
@@ -107,12 +107,10 @@ export function FooterComponent() {
             </h3>
             <div className="flex flex-wrap gap-2">
               {[
-                "TypeScript",
-                "React",
-                "Three.js",
-                "Tailwind",
-                "UI Motion",
-                "DX",
+                "Web Development",
+                "Machine Learning",
+                "Artificial Intelligence",
+                "Game/App Development",
               ].map((tag) => (
                 <span
                   key={tag}
@@ -122,27 +120,12 @@ export function FooterComponent() {
                 </span>
               ))}
             </div>
-
-            <blockquote className="mt-6 border-l-2 border-[#ddccff]/50 pl-3 text-sm text-neutral-300">
-              “Make it simple, but significant.”
-            </blockquote>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 py-6 text-sm text-neutral-400 flex flex-col gap-4 items-center justify-between md:flex-row">
           <p>© {new Date().getFullYear()} Vansh Anand. All rights reserved.</p>
-          <nav className="flex gap-4">
-            <a href="#" className="hover:text-[#ddccff] transition">
-              Privacy
-            </a>
-            <a href="#" className="hover:text-[#ddccff] transition">
-              Terms
-            </a>
-            <a href="#" className="hover:text-[#ddccff] transition">
-              Cookies
-            </a>
-          </nav>
         </div>
       </div>
     </footer>
