@@ -38,11 +38,15 @@ open the site from the localhost link in the terminal (usually http://localhost:
 - **Logo:** Replace image/text with your own mark or name.
 - **Branding:** Tweak colors/background classes to match your palette.
 
-### `elements/LightRaysBackground.tsx`
+### `components/LightRaysBackground.tsx`
 - **Defaults:** Set your preferred ray origin, intensity, color.
 - **Controls:** Remove the settings button if you don’t want client-side tweaks.
 
-### `pages/Projects.tsx` + `components/carousel-3d.tsx`
+### `components/Home.tsx`
+- **Content:** Change the header and paragraph text to match what you want.
+- **Model:** You can go to https://spline.design/ and either choose a model, or create your own and use it in the about section. 
+
+### `components/Projects.tsx` + `lightswind/carousel-3d.tsx`
 - **Content:** Add your project objects (title, brand, timeline, description, tags, image, link).
 - **Section copy:** Edit title, subtitle, tagline (or leave blank).
 - **Behavior:** Adjust `autoRotate`, `rotateInterval`. Card layout/styles live in `components/carousel-3d.tsx`.
@@ -55,11 +59,11 @@ And then in the items list,
 imageUrl: image
 ```
 
-### `pages/Skills.tsx`
+### `components/Skills.tsx`
 - **Title:** Update the heading.
 - **Data:** Add skills, values, and categories.
 
-### `pages/Contact/*`
+### `components/Contact/*`
 - **Links:** Add your socials at the top.
 - **Buttons:** Use href=`mailto:your.email@gmail.com` to open the user’s email client.
 - **Confetti:** Set default confetti options; remove the “psst..” button if you don’t want user controls.
