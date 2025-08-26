@@ -44,7 +44,7 @@ open the site from the localhost link in the terminal (usually http://localhost:
 
 ### `components/Home.tsx`
 - **Content:** Change the header and paragraph text to match what you want.
-- **Model:** You can go to https://spline.design/ and either choose a model, or create your own and use it in the about section. You will need to edit the scene value in <SplineScene /> with the link of the model you choose.
+- **Model:** You can go to https://spline.design/ and either choose a model, or create your own and use it in the about section. After you find a model you want to use, export it and get the integrated view link. Replace the current sceneLink variable with your model's link. You can edit many things about your model, like hover behaviour, auto rotate, and draggable view. 
 
 ### `components/Projects.tsx` + `lightswind/carousel-3d.tsx`
 - **Content:** Add your project objects (title, brand, timeline, description, tags, image, link).
