@@ -22,18 +22,29 @@ function useIsMobile(): boolean {
   return isMobile;
 }
 
+const defaultEnableRays = true;
+const defaultRaysOrigin = "top-center";
+const defaultRaysColor = "#5200A3";
+const defaultRaysSpeed = 1.5;
+const defaultLightSpread = 1.0;
+const defaultRayLength = 4;
+const defaultFollowMouse = true;
+const defaultMouseInfluence = 0.5;
+const defaultNoiseAmount = 0.1;
+const defaultDistortion = 0.05;
+
 export const LightRaysBackground: React.FC = () => {
   // === Live (applied) values ===
-  const [enableRays, setEnableRays] = useState(true);
-  const [raysOrigin, setRaysOrigin] = useState<RaysOrigin>("top-center");
-  const [raysColor, setRaysColor] = useState("#5200A3");
-  const [raysSpeed, setRaysSpeed] = useState(1.5);
-  const [lightSpread, setLightSpread] = useState(1);
-  const [rayLength, setRayLength] = useState(4);
-  const [followMouse, setFollowMouse] = useState(true);
-  const [mouseInfluence, setMouseInfluence] = useState(0.5);
-  const [noiseAmount, setNoiseAmount] = useState(0.1);
-  const [distortion, setDistortion] = useState(0.05);
+  const [enableRays, setEnableRays] = useState(defaultEnableRays);
+  const [raysOrigin, setRaysOrigin] = useState<RaysOrigin>(defaultRaysOrigin);
+  const [raysColor, setRaysColor] = useState(defaultRaysColor);
+  const [raysSpeed, setRaysSpeed] = useState(defaultRaysSpeed);
+  const [lightSpread, setLightSpread] = useState(defaultLightSpread);
+  const [rayLength, setRayLength] = useState(defaultRayLength);
+  const [followMouse, setFollowMouse] = useState(defaultFollowMouse);
+  const [mouseInfluence, setMouseInfluence] = useState(defaultMouseInfluence);
+  const [noiseAmount, setNoiseAmount] = useState(defaultNoiseAmount);
+  const [distortion, setDistortion] = useState(defaultDistortion);
 
   // === Draft (menu) values ===
   const [dEnableRays, setDEnableRays] = useState(enableRays);

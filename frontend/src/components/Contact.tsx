@@ -2,17 +2,20 @@ import { useState } from "react";
 import { ConfettiButton } from "./lightswind/confetti-button";
 import { Mailbox } from "lucide-react";
 
-const LinkedIn = "https://www.linkedin.com/in/vanshanand1/";
-const GitHub = "https://github.com/VanshAnand1";
-const LeetCode = "https://leetcode.com/Vansh0711/";
+const LinkedIn = "";
+const GitHub = "";
+const LeetCode = "";
+
+const defaultParticleCount = 100;
+const defaultParticleSpread = 70;
 
 export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [msg, setMsg] = useState<string>("");
-  const [particleCount, setParticleCount] = useState(100);
-  const [spread, setSpread] = useState(70);
+  const [particleCount, setParticleCount] = useState(defaultParticleCount);
+  const [spread, setSpread] = useState(defaultParticleSpread);
   const [popupOpen, setPopupOpen] = useState(false);
 
   const scriptURL = import.meta.env.VITE_SCRIPT_URL as string | undefined;
@@ -80,11 +83,8 @@ export const Contact = () => {
         </section>
         <section className="text-[#ddccff]">
           Send me an email at{" "}
-          <a
-            href="mailto:vanshanandutsc@gmail.com"
-            className="underline hover:text-white transition"
-          >
-            vanshanandutsc@gmail.com
+          <a href="" className="underline hover:text-white transition">
+            your.email.here@gmail.com
           </a>
         </section>
         <section className="text-[#ddccff]">
