@@ -15,12 +15,11 @@ export function FooterComponent() {
           {/* Brand / bio */}
           <div className="rounded-2xl border border-white/10 bg-neutral-900/50 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,.05)] backdrop-blur">
             <div className="mb-3 text-2xl font-bold tracking-tight">
-              <span className="text-white">Vansh </span>
-              <span className="text-[#ddccff]">Anand</span>
+              <span className="text-white">Your </span>
+              <span className="text-[#ddccff]">Name</span>
             </div>
             <p className="text-sm text-neutral-300">
-              I craft thoughtful interfaces and playful interactions. Always
-              learning, always shipping.
+              Write a small one-liner here.
             </p>
 
             <div className="mt-6 flex gap-3">

@@ -10,17 +10,17 @@ export const NavigationBar = () => {
       links: [
         {
           label: "LinkedIn",
-          href: "https://www.linkedin.com/in/vanshanand1/",
+          href: "",
           ariaLabel: "My LinkedIn Profile",
         },
         {
           label: "GitHub",
-          href: "https://github.com/VanshAnand1",
+          href: "",
           ariaLabel: "My GitHub Profile",
         },
         {
           label: "Leetcode",
-          href: "https://leetcode.com/u/Vansh0711/",
+          href: "",
           ariaLabel: "My Leetcode Profile",
         },
       ],
@@ -37,7 +37,7 @@ export const NavigationBar = () => {
         },
         {
           label: "Repositories",
-          href: "https://github.com/VanshAnand1?tab=repositories",
+          href: "",
           ariaLabel: "My GitHub Repositories",
         },
       ],
@@ -60,17 +60,17 @@ export const NavigationBar = () => {
         },
         {
           label: "Email",
-          href: "mailto:vanshanandutsc@gmail.com",
+          href: "",
           ariaLabel: "Email",
         },
         {
           label: "GitHub",
-          href: "https://github.com/VanshAnand1",
+          href: "",
           ariaLabel: "Twitter",
         },
         {
           label: "LinkedIn",
-          href: "https://www.linkedin.com/in/vanshanand1/",
+          href: "",
           ariaLabel: "LinkedIn",
         },
       ],
@@ -81,7 +81,7 @@ export const NavigationBar = () => {
     <div id="about">
       <CardNav
         logo={logo}
-        logoAlt="Vansh Anand"
+        logoAlt="MyLogo"
         items={items}
         baseColor="transparent"
         menuColor="#ddccff"
