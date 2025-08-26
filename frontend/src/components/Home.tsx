@@ -3,6 +3,9 @@ import { SplineScene } from "./elements/Interactive3DHero/splite";
 import { Card } from "./elements/Interactive3DHero/card";
 import { Spotlight } from "./elements/Interactive3DHero/spotlight";
 
+const sceneLink =
+  "https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode";
+
 export function SplineSceneBasic() {
   return (
     <Card className="center-h bg-transparent relative top-40">
@@ -25,7 +28,7 @@ export function SplineSceneBasic() {
         <div className="lg:basis-1/3 w-full mt-8 lg:mt-0">
           <div className="relative w-full aspect-[4/3] lg:aspect-square">
             <SplineScene
-              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              scene={sceneLink}
               className="absolute inset-0 w-full h-full bg-transparent"
             />
           </div>
