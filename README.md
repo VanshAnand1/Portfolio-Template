@@ -134,10 +134,13 @@ function doPost(e) {
 
 ## 5) Hosting
 For hosting, I would recommend using:
+
 Github Pages: if you want the url to be https://your-github-name.github.io/your-repo-name/
+
 Vercel: if you just want the site public, and the url is not as important to you
 
 There are plenty of tutorials online for hosting webpages, and there may be some changes you need to do in the code for it to work. 
+
 Please keep in mind that you will need to upload the environment variable ```VITE_SCRIPT_URL=paste-your-url-here``` to the site hosting your page for the contact form to work. GitHub pages does not need you to do this. 
 
 You can use the following tutorials:
