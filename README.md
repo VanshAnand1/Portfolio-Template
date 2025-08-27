@@ -141,7 +141,9 @@ There are plenty of tutorials online for hosting webpages, and there may be some
 Please keep in mind that you will need to upload the environment variable ```VITE_SCRIPT_URL=paste-your-url-here``` to the site hosting your page for the contact form to work. GitHub pages does not need you to do this. 
 
 You can use the following tutorials:
+
 https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
 https://vercel.com/docs/getting-started-with-vercel/import
 
 ---
