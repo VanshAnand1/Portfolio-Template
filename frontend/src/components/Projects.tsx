@@ -1,4 +1,5 @@
 import Carousel3D, { type Carousel3DItem } from "./lightswind/carousel-3d";
+import { useState, useEffect } from "react";
 
 const title = "Title";
 const subtitle = "Subtitle";
@@ -43,7 +44,21 @@ const items: Carousel3DItem[] = [
   },
 ];
 
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia("(max-width: 1024px)");
+    const update = () => setIsMobile(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+  return isMobile;
+}
+
 export const Projects = () => {
+  const shouldAutoRotate = !useIsMobile();
   return (
     <section
       id="projects"
@@ -51,7 +66,7 @@ export const Projects = () => {
     >
       <Carousel3D
         items={items}
-        autoRotate
+        autoRotate={shouldAutoRotate}
         rotateInterval={4000}
         cardHeight={500}
         isMobileSwipe
